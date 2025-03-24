@@ -1,0 +1,116 @@
+/* Container Styling */
+/* Ensure full-page background */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #DDE7F3 !important; /* Ensure background applies */
+  overflow-x: hidden;
+}
+
+/* Wrapper that covers the entire page */
+.page-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background: #DDE7F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Ensure the container doesn't override background */
+.law-page-container {
+  width: 100%;
+  max-width: 1200px; /* Keep a readable width */
+  background: #DDE7F3;/* Card-like effect */
+  border-radius: 12px;
+  padding: 40px 20px;
+  
+}
+
+  
+  /* Text Section */
+  .text-section .law-card {
+    background: #fff; /* Clean white card background */
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e6e6e6; /* Subtle border for definition */
+  }
+  
+  .text-section h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .text-section .description {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .text-section ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #555;
+  }
+  
+  .text-section ul li {
+    margin: 5px 0;
+  }
+  
+  /* Compact Button */
+  .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Section */
+  .image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    max-width: 90%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Clean shadow effect */
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .law-page-container {
+      padding: 20px 10px;
+    }
+  
+    .text-section h1 {
+      font-size: 1.6rem;
+    }
+  
+    .btn {
+      width: 100%; /* Full-width button for smaller devices */
+    }
+  }
+  

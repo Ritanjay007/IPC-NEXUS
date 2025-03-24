@@ -1,0 +1,4 @@
+#create a python environment 3.11.7
+Flask==2.2.5
+flask_cors==5.0.1
+fuzzywuzzy==0.18.0
